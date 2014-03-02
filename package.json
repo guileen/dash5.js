@@ -1,0 +1,22 @@
+{
+  "name": "dash5",
+  "version": "0.0.1",
+  "description": "A neat freak version utility library like lodash(underscore)",
+  "main": "dash5.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/guileen/dash5.js.git"
+  },
+  "keywords": [
+    "utility"
+  ],
+  "author": "Gui Lin <guileen@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/guileen/dash5.js/issues"
+  },
+  "homepage": "https://github.com/guileen/dash5.js"
+}
