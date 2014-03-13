@@ -18,6 +18,22 @@ _.fapply = function(callback, fn) {
     }
 }
 
+// ============ async
+_.parallel = function (tasks, callback) {
+  var results = [], count = tasks.length;
+  tasks.forEach(function(task, index) {
+      task(function(err, data) {
+          results[index] = data;
+          if(err) {
+            callback(err);
+            callback = null;
+          }
+          if(--count === 0 && callback) {
+            callback(null, results);
+          }
+      });
+  });
+}
 // ============ iteration
 _.each = function(obj, iter) {
     if(!obj) return; 
