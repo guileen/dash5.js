@@ -4,6 +4,14 @@ var _ = exports;
 
 // util
 _.format = util.format;
+_.clone = function(obj) {
+    return JSON.parse(JSON.stringify(obj));
+}
+
+// collections
+_.contains = function(collection, target, fromIndex) {
+    return collection.indexOf(target, fromIndex) >= 0;
+}
 
 // callback handy
 _.fmap = function(callback, iter) {
